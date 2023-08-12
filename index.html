@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <header>
+        <div class="menu-side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note"></i>Recommended</h4>
+            </div>
+            <div class="menu-song">
+                <li class="songItem">
+                   <span>01</span>
+                   <img src="images/Ho Hey.jpg" alt="">
+                   <h5>Ho Hey <br> <div class="subtitle">The Lumineers</div></h5> 
+                        <i class="bi playListPlay bi-play-circle" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="images/Alors_on_danse.jpg" alt="">
+                    <h5>Alors On Danse <br> <div class="subtitle">Stromae</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="2"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>03</span>
+                    <img src="images/freaks.png" alt="">
+                    <h5>Freaks<br> <div class="subtitle">Surf Curse</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="3"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>04</span>
+                    <img src="images/dedublüman.jpg" alt="">
+                    <h5>Gamzedeyim Deva Bulmam<br> <div class="subtitle">Dedublüman</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="4"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>05</span>
+                    <img src="images/dönence.jpg" alt="">
+                    <h5><br>Dönence<div class="subtitle">Barış Manço</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="5"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>06</span>
+                    <img src="images/adelee.jpg" alt="">
+                    <h5>Lovesong<br><div class="subtitle">Adele</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="6"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>07</span>
+                    <img src="images/erkin.jpg" alt="">
+                    <h5>Tek Başına<br><div class="subtitle">Erkin Koray</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="7"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>08</span>
+                    <img src="images/BEN-E-KING-2.png" alt="">
+                    <h5>Stand By Me<br> <div class="subtitle">Ben E.King</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="8"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>09</span>
+                    <img src="images/dido.jpg" alt="">
+                    <h5>Thank You<br><div class="subtitle">Dido</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="9"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>10</span>
+                    <img src="images/REM.jpg" alt="">
+                    <h5>Losing My Religion<br><div class="subtitle">R.E.M</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="10"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>11</span>
+                    <img src="images/yanbenimle.jpg" alt="">
+                    <h5>Yan Benimle<br><div class="subtitle">Sıla</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="11"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>12</span>
+                    <img src="images/tom-odell.jpg" alt="">
+                    <h5>Another Love<br><div class="subtitle">Tom Odell</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="12"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>13</span>
+                    <img src="images/teoman.jpg" alt="">
+                    <h5>Bana Öyle Bakma<br><div class="subtitle">Teoman</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="13"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>14</span>
+                    <img src="images/yüzyüzeyken.jpg" alt="">
+                    <h5>Sen Varsın Diye<br><div class="subtitle">Yüzyüzeyken Konuşuruz</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="14"></i>
+                 </li>
+                 <li class="songItem">
+                    <span>15</span>
+                    <img src="images/adamlar.jpg" alt="">
+                    <h5>Koca Yaşlı Şişko Dünya<br><div class="subtitle">Adamlar</div></h5> 
+                         <i class="bi playListPlay bi-play-circle" id="15"></i>
+                 </li>
+            </div>
+        </div>
+
+        <div class="song-side">
+         <nav>
+            <ul>
+               <li>Discover <span></span></li>
+               <li>My Library</li>
+               <li>Podcast</li>
+            </ul>
+            <div class="search">
+               <i class="bi bi-search"></i>
+               <input type="text" placeholder="">
+            </div>
+         </nav>   
+           <div class="popular-song">
+               <div class="h4">
+                  <h4>Popular Song</h4>
+                  <div class="btn_s">
+                     <i class="bi bi-arrow-left-circle-fill" id="pop_song_left"></i>
+                     <i class="bi bi-arrow-right-circle-fill" id="pop_song_right"></i>
+                  </div>
+               </div>
+               <div class="pop-song">
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/harmless.png" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Swing Lynn<br>
+                        <div class="subtitle">Harmless</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/Alors_on_danse.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Alors On Danse<br>
+                        <div class="subtitle">Stromae</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/tom-odell.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Another Love<br>
+                        <div class="subtitle">Tom Odell</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/REM.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Losing My Religion<br>
+                        <div class="subtitle">R.E.M</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/pixies.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Where Is My Mınd<br>
+                        <div class="subtitle">Pixies</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/adamlar.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Koca Yaşlı Şişko Dünya<br>
+                        <div class="subtitle">Adamlar</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/dedublüman.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Gamzedeyim Deva Bulmam<br>
+                        <div class="subtitle">Dedublüman</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/weeknd.png" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Blinding Lights<br>
+                        <div class="subtitle">The Weeknd</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/teoman.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Bana Öyle Bakma<br>
+                        <div class="subtitle">Teoman</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/eminem.jpeg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>Lose Yourself<br>
+                        <div class="subtitle">Eminem</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img-play">
+                        <img src="images/amy.jpg" alt="">
+                        <i class="bi playListPlay bi-play-circle-fill"></i>
+                     </div>
+                     <h5>This Is The Life<br>
+                        <div class="subtitle">Amy Macdonald</div>
+                     </h5>
+                  </li>
+               </div>
+           </div>
+
+
+           <div class="popular-artists">
+            <div class="h4">
+               <h4>Popular Artists</h4>
+            </div>
+            <div class="item">
+               <li>
+                  <img src="images/eminem.jpeg" alt="">
+               </li>
+               <li>
+                  <img src="images/amy.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/adamlar.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/yanbenimle.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/BEN-E-KING-2.png" alt="">
+               </li>
+               <li>
+                  <img src="images/erkin.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/dönence.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/dido.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/Alors_on_danse.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/adelee.jpg" alt="">
+               </li>
+               <li>
+                  <img src="images/Ho Hey.jpg" alt="">
+               </li>
+            </div>
+           </div>
+        </div>
+
+
+
+
+
+        <div class="master-play">
+            <div class="wave" id="wave">
+               <div class="wave1"></div>
+               <div class="wave1"></div>
+               <div class="wave1"></div>
+            </div>
+            <img src="images/dönence.jpg" alt="" id="poster_master_play">
+            <h5 id="title">
+               Dönence
+               <div class="subtitle">Barış Manço</div>
+            </h5>
+            <div class="icon">
+               <i class="bi shuffle bi-music-player"></i>
+               <i class="bi bi-skip-start-btn-fill" id="back"></i>
+               <i class="bi bi-play-circle-fill" id="masterPlay"></i>
+               <i class="bi bi-skip-end-btn-fill" id="next"></i>
+               <i class="bi bi-cloud-arrow-down-fill" id="download"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+               <input type="range" id="seek" min="0" max="100">
+               <div class="bar2" id="bar2"></div>
+               <div class="dot"></div>
+            </div>
+            <span id="currentEnd">6:50</span>
+            <div class="vol">
+               <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+               <input type="range" min="0" max="100" id="vol">
+               <div class="vol-bar"></div>
+               <div class="dot" id="vol-dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>
